@@ -30,5 +30,23 @@ Add additional notes about how to deploy this on a live system
 ## Contributing/Development
 
 
+- [x] Do this thing 
+- [x] Do this thing 
+- [ ] Do this thing 
+- [ ] Do this thing 
+- [ ] Do this thing 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
