@@ -1,0 +1,51 @@
+
+use mycustomers;
+
+db.createUser({
+  user: "Zach",
+  pwd: "password",
+  roles: [
+    { role: "readWrite", db: "dbAdmin" }
+  ]
+});
+
+db.createCollection("customers");
+
+db.customers.insert({first_name:"Zach", last_name:"Cristol"});
+
+db.customers.insert([
+    {first_name:"Ben", last_name:"Cristol"}, 
+    {first_name:"Josh", last_name:"Cristol"},
+    {first_name:"Lexi", last_name:"Jew"},
+]);
+
+// match on lexi, replace with
+db.customers.update(
+    {first_name:"Lexi"}, {first_name:"Lexi", gender:"female"}
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    first_name:"Zach",
+    last_name:"Cristol",
+    age: 21,
+    address: {
+        street: "street lane"
+        city: "fort worth"
+    }
+}
